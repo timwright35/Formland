@@ -5,11 +5,12 @@ player = {
 			y_vel = 0,
 			jump_vel = -768,
 			speed = 256,
-			flySpeed = 700,
+			jumpSpeed = 700,
 			state = "",
 			h = 32,
 			w = 32,
 			standing = false,
+			flying = false,
 		}
 		
 function player:jump()
@@ -48,7 +49,7 @@ function player:update(dt)
 	self.y_vel = self.y_vel + (world.gravity * dt)
 	
 	self.x_vel = math.clamp(self.x_vel, -self.speed, self.speed)
-	self.y_vel = math.clamp(self.y_vel, -self.flySpeed, self.flySpeed)
+	self.y_vel = math.clamp(self.y_vel, -self.jumpSpeed, self.jumpSpeed)
 	
 	local nextY = self.y + (self.y_vel*dt)
 	if self.y_vel < 0 then

@@ -1,6 +1,7 @@
 -- Configurations
 camera = require("camera")
 player = require("player")
+bird = require("creatures/bird")
 world = require("world")
 
 -- Load States

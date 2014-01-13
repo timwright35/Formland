@@ -1,0 +1,29 @@
+Programming:
++ Make better collision system or find a better one
++ Work out better custom phsyics for a 2D platformer
++ Set up creature/enemy spawn system
++ Make system for player to morph to other creatures
++ Make or find a animation controller
++ Make or find a save manager
++ Make or find a world state manager
++ Make or find a system for switching levels
++ Make or find a way to load resources for each level in bulk
++ Make or find a way to cleanup memory
++ Make menu system
++ ...
+
+Graphics:
++ Make tileset for first level
++ Make player stage 1 tileset/animations
++ Make player creaure tilesets/animations
++ Make graphics for menu
++ ...
+
+Sounds:
++ Make or find sounds for level 1
++ Make or find sounds for menu
++ ...
+
+Story:
++ Make a story off concept
++ ...

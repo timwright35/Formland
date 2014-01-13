@@ -23,6 +23,7 @@ function game:draw()
 	love.graphics.setColor( 255, 255, 255 )
 	
 	map:draw()
+	bird:draw()
 	
 	camera:unset()
 end
@@ -33,6 +34,7 @@ function game:update(dt)
 	end
 	
 	player:update(dt)
+	bird:update(dt)
 	TEsound.cleanup()
 	camera:setPosition( player.x - (love.graphics.getWidth()/2), player.y - (love.graphics.getHeight()/2))
 end
