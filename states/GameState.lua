@@ -1,8 +1,6 @@
 local game = {}
 
 function game:init()
-	love.graphics.setBackgroundColor( 220, 220, 255 )
-	
 	AdvTiledLoader.path = "maps/"
 	map = AdvTiledLoader.load("TestMap.tmx")
 	map:setDrawRange(0, 0, map.width * map.tileWidth, map.height * map.tileHeight)
@@ -10,7 +8,7 @@ function game:init()
 end
 
 function game:enter(previous)
-
+	
 end
 
 function game:leave()
@@ -35,12 +33,16 @@ function game:update(dt)
 	end
 	
 	player:update(dt)
-	camera:setPosition( player.x - (love.graphics.getWidth()/2), player.y - (love.graphics.getHeight()/2))
 	TEsound.cleanup()
-
+	camera:setPosition( player.x - (love.graphics.getWidth()/2), player.y - (love.graphics.getHeight()/2))
 end
 
 function game:focus(f)
+		if(f) then
+			GS.switch(game)
+		else
+			GS.switch(pause)
+		end
 
 end
 
@@ -64,6 +66,9 @@ function game:keypressed(key)
 	end
 	if (key == "k") then
 		GS.switch(menu)
+	end
+	if (key == "p") then
+		GS.switch(pause)
 	end
 end
 

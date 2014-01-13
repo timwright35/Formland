@@ -121,3 +121,5 @@ end
 function player:draw()
 
 end
+
+return player

@@ -1,15 +1,10 @@
 local menu = {}
 
 function menu:init()
-	local frame = loveframes.Create("frame")
-	frame:SetName("Test GUI")
-	frame:SetPos(256.1024)
-	-- frame:CenterWithinArea(unpack(demo.centerarea))
-			 
-	local button = loveframes.Create("button", frame)
+	local button = loveframes.Create("button")
 	button:SetWidth(200)
-	button:SetText("Click to goto game")
-	button:Center()
+	button:SetText("Play")
+	button:CenterWithinArea(0,0,love.window.getWidth(), love.window.getHeight())
 	
 	button.OnClick = function(object, x, y)
 		GS.switch(game)
