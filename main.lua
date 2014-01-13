@@ -3,19 +3,11 @@ camera = require("camera")
 player = require("player")
 world = require("world")
 
--- States
-menu = require("states/MainMenuState")
-game = require("states/GameState")
-pause = require("states/PauseState")
+-- Load States
+require("states/LoadStates")
 
--- Libaries
-AdvTiledLoader = require("libs/AdvTiledLoader.Loader")
-require("libs/TEsound")
-require("libs/LoveFrames")
-require("libs/Jumper.grid")
-require("libs/Jumper.pathfinder")
-require("libs/HardonCollider")
-GS = require("libs/Hump.gamestate")
+-- Libs
+require("libs/LoadLibs")
 
 function love.load()
 	love.graphics.setBackgroundColor( 220, 220, 255 )
@@ -43,7 +35,6 @@ function love.keypressed(key, unicode)
 	
 end
  
-
 function love.keyreleased(key)
 	
 end
