@@ -1,12 +1,5 @@
 Formland
 ========
+Being rebuilt in ImpactJS engine, requires ImpactJS++
 
-Coming soon...
-
-Current Keys:
-
-A - Move Left
-D - Move Right
-W - Jump
-Space - Jump
-P - Pause
+-Currently there is nothing running, just some basic framework
