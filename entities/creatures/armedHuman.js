@@ -15,6 +15,6 @@ ig.module(
 		var _pf = ig.pathfinding;
 
 		ig.EntityArmedHuman = ig.global.EntityArmedHuman = ig.Creature.extend({
-			//NO-OP
+			//NO-OP - HAHA
 		});
 	});
